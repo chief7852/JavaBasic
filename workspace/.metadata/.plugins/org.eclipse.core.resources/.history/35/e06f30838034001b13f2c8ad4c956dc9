@@ -1,0 +1,12 @@
+package home;
+
+public class machine_inside {
+
+	
+	int money = 0;
+	
+	void beverage(){
+		 
+	}
+	
+}
