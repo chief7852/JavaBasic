@@ -1,0 +1,25 @@
+package d_array;
+
+import java.util.Arrays;
+
+public class programus {
+
+	public static void main(String[] args) {
+		// 0~9까지 랜덤한 수를 나타내는 배열만들기
+		int[] arr = new int[10];
+		for(int i = 0; i <arr.length;i++){
+			arr[i] = (int)(Math.random()*10);
+		}
+        
+        int[] temp = new int[arr.length];
+        for(int i = 0; i <arr.length; i++){
+            for(int j =i+1;j <arr.length; j++){ 
+                if(arr[i] !=arr[j]){
+                    temp[i] = 
+                }
+            }
+        }
+        
+	}
+
+}

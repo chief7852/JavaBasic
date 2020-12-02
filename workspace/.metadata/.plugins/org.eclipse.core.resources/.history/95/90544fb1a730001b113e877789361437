@@ -1,0 +1,25 @@
+package Break;
+
+import java.util.Scanner;
+
+public class Ex5_5 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("숫자를 입력해 주십시오 > ");
+		String num = sc.nextLine();
+		String sub[] = num.split("");
+		int temp =1;
+		for(int i = sub.length-1,j=0; i >= 0 ;i--,j++){
+			System.out.print(sub[i]);
+			
+			if(j ==temp*3&& i ==sub.length-1){
+				System.out.print(",");
+				temp++;
+			}
+		}
+
+	}
+}
+
+

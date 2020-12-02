@@ -1,0 +1,14 @@
+package Break;
+
+import java.util.Arrays;
+
+public class ex {
+	public static void main(String[] args) {
+		String rev = "";//12345
+		for(int i = str.length() -1 ; 0 <= i ; i--){
+			rev += str.charAt(i);
+		}
+		System.out.println(rev);
+		}
+	}
+

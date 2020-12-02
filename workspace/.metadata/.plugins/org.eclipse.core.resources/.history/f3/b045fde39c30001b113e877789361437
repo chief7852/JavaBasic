@@ -1,0 +1,14 @@
+package Break;
+
+import java.util.Arrays;
+
+public class ex {
+	public static void main(String[] args) {
+		String a = "2421512";
+		String sub[] = a.split("");
+		
+		for(int i = 1; i<7 ;i++){
+			System.out.print(sub[i]);
+		}
+	}
+}

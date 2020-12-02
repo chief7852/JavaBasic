@@ -1,0 +1,24 @@
+package e_oop;
+
+public class Calculator {
+	//두개의 파라미터를 받아서 연산자로 계산하는 식
+	//연산자 사용 '+', '-', '*', '/', '%'
+
+	//메서드 :
+	
+	int plus(int x,int y){
+		return x+y;
+	}
+	int minus(int x,int y){
+		return x-y;
+	}
+	long multi(long x,long y){
+		return x*y;
+	}
+	double divi(int x,int y){
+		return x/y;
+	}
+	int remain(int x,int y){
+		return x%y;
+	}
+}

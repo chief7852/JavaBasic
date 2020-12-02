@@ -1,0 +1,21 @@
+package Break;
+
+import java.util.Scanner;
+
+public class Ex5_5 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("숫자를 입력해 주십시오 > ");
+		String num = sc.nextLine();
+		
+		int[] a = new int [10];
+		for(int i =1; i<10;i++){
+			 a[i] = 3*i;
+			String sub = num.substring(a[i],a[i-1]);
+		}
+		System.out.println(num);
+
+	}
+
+}
