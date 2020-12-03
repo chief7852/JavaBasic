@@ -1,0 +1,48 @@
+package eoop;
+
+import java.util.Scanner;
+
+public class Telephone {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		Telephone tel = new Telephone();
+		
+		System.out.println("_______________________________");
+		System.out.println("|       |");
+		System.out.println("|_____||			   ||_____|");
+		System.out.println("      /                 \\");
+		System.out.println("     /                   \\");
+		System.out.println("    |                     |");
+		System.out.println("    |_____________________|");
+		
+		
+		
+		
+		
+	}
+	
+	int num = 0;
+	int[] Pnum = new int[10];
+	
+	final int MAX_NUM =9;
+	final int MIN_NUM =0;
+
+	
+	int numupdown(String num){
+		if(this.num != MAX_NUM && this.num != MIN_NUM){
+			if(num.equals(">")){
+				this.num++; 
+			}if(num.equals("<")){
+				this.num--; 
+			}
+		}
+		return this.num;
+	}
+	
+	
+	void pick(){
+		
+	}
+	
+	
+}

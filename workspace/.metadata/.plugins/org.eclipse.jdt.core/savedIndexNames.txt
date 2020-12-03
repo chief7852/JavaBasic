@@ -10,7 +10,6 @@ INDEX VERSION 1.126+D:\A_TeachingMaterial\1.BasicJava\workspace\.metadata\.plugi
 2419878602.index
 1938067051.index
 508537678.index
-2114095709.index
 1379532648.index
 156359348.index
 3449960751.index
