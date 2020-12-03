@@ -33,7 +33,7 @@ public class Telephone {
 			System.out.println(tel.num);
 			break;
 		case "0" :tel.Pick(Unum);
-				tel.Pnum[1] = i[1];
+				tel.Pnum = i;
 			break;
 			}
 		}
