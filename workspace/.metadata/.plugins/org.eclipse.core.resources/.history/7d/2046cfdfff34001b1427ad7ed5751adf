@@ -25,5 +25,6 @@ public class Alba {
 	//계산하기 위해 필요한것? :계산서
 	//계산 후 보스에게 줄 것? :없음
 	void pay(String[] order){
-		System.out.println("2만원입니다. 안녕히 가세요.}
+		System.out.println("2만원입니다. 안녕히 가세요.");
+	}
 }
