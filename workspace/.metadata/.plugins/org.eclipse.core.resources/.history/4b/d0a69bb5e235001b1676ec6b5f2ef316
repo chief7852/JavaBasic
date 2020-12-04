@@ -1,0 +1,6 @@
+package subj_game;
+
+public class Char2 {
+	int bullit;
+	
+}

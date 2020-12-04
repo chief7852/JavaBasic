@@ -7,10 +7,11 @@ public class Telephone {
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
 		Telephone tel = new Telephone();
-		
+		int temp[] = new int[10];
+		int x = 0;
 		while(true){
 		System.out.println("_______________________________");
-		System.out.println("|                             |");
+		System.out.println("|       _______________       |");
 		System.out.println("|_____||               ||_____|");
 		System.out.println("      /                 \\");
 		System.out.println("     /                   \\");
@@ -20,10 +21,11 @@ public class Telephone {
 		System.out.println("(<,>)키를 입력해서 번호를 위 아래로 내릴수 있습니다");
 		String Unum = s.nextLine();
 		System.out.println(":"+tel.num);
-
+		System.out.println();
 		
-		int i[] = new int[10];
 		
+	
+	
 		switch(Unum){
 		
 		case ">": tel.numup(Unum);
@@ -32,10 +34,12 @@ public class Telephone {
 		case "<" :tel.numdown(Unum);
 			System.out.println(tel.num);
 			break;
-		case "0" :tel.Pick(Unum);
-				tel.Pnum[1] = i[1];
+		case "0" :temp[x] = tel.num;
+					x++;
+					tel.num =0;
 			break;
 			}
+		System.out.println(Arrays.toString(temp));	
 		}
 	}
 		
@@ -70,6 +74,10 @@ public class Telephone {
 			Pnum[i] = this.num;
 			i = i+1;
 		}
+	}
+	
+	void visual(){
+		
 	}
 	
 	

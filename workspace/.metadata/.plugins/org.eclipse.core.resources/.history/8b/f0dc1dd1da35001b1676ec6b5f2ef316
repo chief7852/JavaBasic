@@ -1,0 +1,18 @@
+package subj_game;
+
+public class homeWork {
+	//다음주 수요일 오후시간에 만든 프로그램 발표(게임만들어서)           
+	//ㆍ == >ㅌ +한자
+	public static void main(String[] args) {
+		long cc = System.currentTimeMillis();
+		int a = 0;
+		for(int i = 0; i < 200; i ++){
+			a = (int)(Math.random()*45)+1;
+			System.out.print(a + "\t");
+		}
+		long ccq = System.currentTimeMillis();
+		System.out.println("시작"+ cc);
+		System.out.println("끝"+ ccq);
+		System.out.println("걸린시간"+""+(ccq-cc));
+	}
+}

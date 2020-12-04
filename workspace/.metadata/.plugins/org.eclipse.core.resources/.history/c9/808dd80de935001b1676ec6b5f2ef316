@@ -1,0 +1,38 @@
+package subj_game;
+
+import home.ScanUtil;
+
+import java.util.Scanner;
+
+public class ex2 {
+
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		int num = ScanUtil.nextint();
+		ex2 a = new ex2();
+		while(num == 0){
+			int i =0;
+			long end = System.currentTimeMillis();
+			long start = System.currentTimeMillis();
+			while((end-start)<200)
+				end=System.currentTimeMillis();
+			i++;
+			a.back(i);
+			
+		}
+
+	}
+	
+	void back(int i){
+		if(i%2 == 0){
+		System.out.println("☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆");
+		System.out.println("☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆");
+		System.out.println("☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆");
+		}else{
+		System.out.println("★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★");
+		System.out.println("★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★");
+		}
+	}
+	
+	
+}

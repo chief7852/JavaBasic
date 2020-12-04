@@ -1,0 +1,14 @@
+package subj_game;
+
+public class star {
+	public static void main(String[] args) {
+		Scanner s = new Scanner();
+		while()
+			long end = System.currentTimeMillis();
+			long start = System.currentTimeMillis();
+			while((end-start)<200)
+				end=System.currentTimeMillis();
+			System.out.println("☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆");
+		}
+	}
+

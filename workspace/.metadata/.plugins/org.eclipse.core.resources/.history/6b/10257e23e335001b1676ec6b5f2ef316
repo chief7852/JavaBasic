@@ -1,0 +1,7 @@
+package subj_game;
+
+public class star {
+	void visual(){
+		
+	}
+}
