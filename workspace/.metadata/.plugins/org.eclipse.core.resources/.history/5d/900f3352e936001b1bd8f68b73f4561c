@@ -13,7 +13,7 @@ public class homeWork {
 		for(int i = 0 ; i <15; i++){
 			long end = System.currentTimeMillis();
 			long start = System.currentTimeMillis();
-			while((end-start)<1000)
+			while((end-start)<500)
 				end=System.currentTimeMillis();
 			a.back(i);
 			
