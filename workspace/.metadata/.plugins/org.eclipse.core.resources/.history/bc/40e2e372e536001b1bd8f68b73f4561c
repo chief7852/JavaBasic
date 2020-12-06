@@ -1,0 +1,31 @@
+package subj_game;
+
+import home.ScanUtil;
+
+import java.util.Scanner;
+
+public class ex2 {
+
+	
+	void back(int i){
+		if(i%2 == 0){
+			System.out.println("☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★");
+			System.out.println("★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆");
+			System.out.println("\t게임을 시작하려면 아무 키나 누르십시오...");
+			System.out.println("☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★");
+			System.out.println("★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆");
+			System.out.println();
+			System.out.println();
+		}else{
+			System.out.println("★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆");
+			System.out.println("☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★");
+			System.out.println("\t게임을 시작하려면 아무 키나 누르십시오...");
+			System.out.println("★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆");
+			System.out.println("☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★");
+			System.out.println();
+			System.out.println();
+		}
+	}
+	
+	
+}

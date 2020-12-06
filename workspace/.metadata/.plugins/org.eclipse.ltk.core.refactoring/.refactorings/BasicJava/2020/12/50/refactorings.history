@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move package &apos;Mandoo&apos; to &apos;Livecoding/src&apos;&#x0D;&#x0A;- Original project: &apos;BasicJava&apos;&#x0D;&#x0A;- Destination element: &apos;Livecoding/src&apos;&#x0D;&#x0A;- Original element: &apos;BasicJava/src/Mandoo&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move package" destination="=Livecoding/src" element1="/src&lt;Mandoo" flags="589830" fragments="1" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.movePackages" stamp="1607247326508" version="1.0"/>
+</session>

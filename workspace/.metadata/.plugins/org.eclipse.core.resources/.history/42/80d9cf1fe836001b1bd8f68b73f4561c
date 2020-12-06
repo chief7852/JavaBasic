@@ -1,0 +1,29 @@
+package subj_game;
+
+import java.util.Scanner;
+
+public class homeWork {
+	//다음주 수요일 오후시간에 만든 프로그램 발표(게임만들어서)           
+	//ㆍ == >ㅌ +한자
+
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		
+		Background a = new Background();
+		for(int i = 0 ; i <1000; i++){
+			long end = System.currentTimeMillis();
+			long start = System.currentTimeMillis();
+			while((end-start)<300)
+				end=System.currentTimeMillis();
+			a.back(i);
+			
+		}
+		
+ 
+		
+		
+		
+		
+		
+	}
+}
