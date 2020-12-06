@@ -1,5 +1,6 @@
 package Mandoo;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 
@@ -42,13 +43,10 @@ public class game_start {
 		
 		a.loding();
 		int[] temp = new int[7] ;
-		String sum = "";
 		for(int i = 0; i < temp.length; i++ ){
 	    
 			if(i !=0){
-				sum +=String.valueOf(temp[i-1]);
-				System.out.print("들어간 재료"+sum);
-				System.out.println();
+				System.out.print(temp[i-1]);
 			}
 		b.dump();
 		System.out.println("재료를 골라주십시오(원하는 재료 앞의 숫자를 입력해 주십시오)");
@@ -56,7 +54,7 @@ public class game_start {
 		int nu = s.nextInt();
 		System.out.println();
 		System.out.println();
-		temp[i] = nu;
+		nu = temp[i];
 		}
 		
 		for(int i =0;i<temp.length; i++){

@@ -47,7 +47,7 @@ public class game_start {
 	    
 			if(i !=0){
 				sum +=String.valueOf(temp[i-1]);
-				System.out.print("들어간 재료"+sum);
+				System.out.print("들어간 재료"+temp[i-1]);
 				System.out.println();
 			}
 		b.dump();
