@@ -1,0 +1,15 @@
+package Mandoo;
+
+import java.util.Scanner;
+
+public class game_start {
+
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		
+		System.out.println("만두속 만들기");
+		System.out.println();
+
+	}
+
+}
