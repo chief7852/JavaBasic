@@ -1,0 +1,101 @@
+package Mandoo;
+
+import java.util.Scanner;
+
+
+
+public class game_start {
+
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		Instruction a = new Instruction();
+		Food b = new Food();
+
+
+		//인트로
+		String soge = "\n\n흠...한동네에 만두집이 두개인건 곤란해..\n\n"				 //
+				+ "만두맛으로 승부를 결정하자! 진정한 고향만두의 맛을 보여 주겠어!\n\n";     //
+		System.out.println("=================================");            //	soge 값을 하나하나 시간딜레이 시켜 출력하게
+		for(int i = 0 ; i< soge.length();i++){                              //	만들었다.
+			//
+			long end = System.currentTimeMillis();                          //
+			long start = System.currentTimeMillis();                        //
+			while((end-start)<10)                                          //
+				end=System.currentTimeMillis();                             //
+			System.out.print(soge.charAt(i));                               //	한자 한자 출력시키기.
+		}                                                                   //
+		System.out.println("\n=================================");          //
+		//
+		//게임 설명
+		System.out.println("  0.게임시작\t 1.게임설명");
+		String input = s.nextLine();
+
+		switch(input){														//게임 시작과 설명으로 넘어가게
+		case "0" : break;													//입력받는다.
+
+		case "1" :a.Start();
+		System.out.println("  0.게임시작 ");
+		input = s.nextLine();
+		if(input == "0"){
+			break;
+		}
+		}	
+
+		//ui만들어 보고싶어서 만든 로딩화면
+		a.loding();															//Instruction 클래스에 있는 로딩화면을 가져옴
+
+
+
+		//재료 입력받기
+		String sum = "";
+		String nu;
+		for(int i = 1; i <= 7; i++ ){
+
+			System.out.print("들어간 재료 :"+sum);								//입력받은 재료를 food클래스에서 가져와서
+			System.out.println();                                           //sum 값에 저장해서 출력함으로써
+			b.dump();                                                       //자신이 넣었던게 뭐였는지 볼수있게 만들음
+			b.how();                                                        //
+			//
+			nu = s.nextLine();
+
+			b.dum(nu);
+			System.out.println();
+			System.out.println();
+			sum = sum + b.dum(nu);
+
+		}
+		System.out.println("들어간 재료 :"+sum);
+
+		//만두피 만들기 로 넘어가는 단계
+		String manu = "만두피";
+		a.nextLevel(manu);
+		String sum2 = "";
+		nu = "";
+		for(int i = 1; i <= 2; i++){
+			System.out.print("들어간 재료 :"+sum2);								//입력받은 재료를 food클래스에서 가져와서
+			System.out.println();
+			b.dump2();
+			b.how();
+			nu = s.nextLine();
+			System.out.println();
+			b.dum2(nu);
+			System.out.println();
+			System.out.println();
+			sum2 = sum2 + b.dum2(nu);
+		}
+		System.out.println("들어간 재료 :"+sum2);
+		
+		//반죽모양잡기
+		manu = "반죽모양";
+		a.nextLevel(manu);
+		b.dump3();
+		nu = s.nextLine();
+		b.dum3(nu);
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		String sum3 = b.dum3(nu);
+		System.out.println("만두모양 :"+sum3);
+	}
+
+}

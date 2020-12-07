@@ -1,0 +1,65 @@
+package Mandoo;
+
+public class Instruction {
+	
+	//게임 시작전
+	void loding(){
+		for(int i = 0 ; i <10; i++){
+			long end = System.currentTimeMillis();
+			long start = System.currentTimeMillis();
+			while((end-start)<100)
+				end=System.currentTimeMillis();
+		back(i);	
+		}
+	}
+	
+	//게임 불러오는중
+	void back(int i){
+		if(i%2 == 0){
+			System.out.println("☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★");
+			System.out.println("★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆");
+			System.out.println("\t🔪👩‍🍳🍳게임 불러오는중🍳👨‍🍳🔪");
+			System.out.println("☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★");
+			System.out.println("★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆");
+			System.out.println();
+			System.out.println();
+		}else{
+			System.out.println("★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆");
+			System.out.println("☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★");
+			System.out.println("\t🔪👩‍🍳🍳게임 불러오는중🍳👨‍🍳🔪");
+			System.out.println("★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆");
+			System.out.println("☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★");
+			System.out.println();
+			System.out.println();
+		}
+			
+		}
+	
+	//게임방법
+	void Start() {
+		System.out.println("=====================================");
+		System.out.println("1. 원하는 재료들을 숫자 키로 입력해서 선택.");
+		System.out.println("2. 만두속 만들기, 만두피만들기, 만두빚기,\n"
+				+ "     요리하기의 4단계를 차례로 진행한다.");
+		System.out.println("3. 단계 별로 있는 > 칸을 이용해서 그 단계를\n"
+				+ "     마무리 한다.");
+		System.out.println("4. 만두맛은 만두속, 만두피, 모양에 따른 요리\n"
+				+ "     방법에 따라 맛이 결정된다.");
+		System.out.println("=====================================");
+	}
+	
+	//정답
+	void ending(){
+		String a = "돼지고기 두부 양파 양배추 참기름 마늘 대파";
+		String b = "밀가루 물";
+		String c = "긴 반달모양 = 굽기, 또아리모양 = 찌기 , 쭈그리모양 = 삶기";
+	}
+	
+	void script(){
+		if(true){
+			System.out.println("고향만두를 따라올 만두는 없지.. ㅎㅎㅎ");
+		}else {
+			System.out.println("퉷퉷 이게 무슨맛이야 조보아씨 이리 내려와봐유!");
+		}
+	}
+}
