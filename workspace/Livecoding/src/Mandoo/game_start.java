@@ -53,16 +53,19 @@ public class game_start {
 		b.dump();
 		System.out.println("재료를 골라주십시오(원하는 재료 앞의 숫자를 입력해 주십시오)");
 		System.out.print("무엇을 넣을까...>");
-		int nu = s.nextInt();
+		String nu = s.nextLine();
 		System.out.println();
 		System.out.println();
-		temp[i] = nu;
+		b.dum(nu);
+		
 		}
+		
 		
 		for(int i =0;i<temp.length; i++){
+			b.dum = temp[i];
 			System.out.print(temp[i]);
 		}
-		
+		// 0.
 		
 		
 		

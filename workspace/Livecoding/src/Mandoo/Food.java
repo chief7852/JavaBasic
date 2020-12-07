@@ -2,6 +2,11 @@ package Mandoo;
 
 public class Food {
 	//속재료
+	void dum(String nu){
+		switch(nu){
+		case 1 : 
+		}
+	}
 	String meet = "돼지고기";
 	String dubu = "두부";
 	String onion = "양파";
