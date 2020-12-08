@@ -1,24 +1,23 @@
 package programers;
 
-public class sum {
+public class sum 
+{
 
-	public static void main(String[] args) {
-		int[] numbers = {2,1,3,4,1};
-		int[] temp = null ;
-		int x = 0;
-		for(int i = 0;i <numbers.length; i++)
+	public static void main(String[] args) 
+	{
+		int[] stu = {1,2,3,4,5};
+		int[] reserve = {1,3,5};
+		int[] lost = {2,4};
+		for(int i = 0;i <lost.length;i++)
 		{
-			for(int j =0; j<numbers.length;j++)
+			for(int j = 0; j<stu.length;j++)
 			{
-				if(numbers[i] != numbers[j])
+				if(lost[i]==j)
 				{
-					temp[x] = numbers[i] + numbers[j];
-					x++;
+					
 				}
 			}
-			System.out.println(temp[i]);
 		}
-		
 	}
 
 }

@@ -1,0 +1,21 @@
+package programers;
+
+public class BBubgi {
+	public static void main(String[] args) {
+		int[] numbers = {2,1,3,4,1};
+		int[] temp = null;
+		
+		for(int i  = 0 ; i< numbers.length-1;i++)
+		{
+			for(int j = 1+i ; j <numbers.length;j++)
+			{
+				if(i!=j)
+				{
+					temp[i]=numbers[i]+numbers[j];
+				}
+			}
+			System.out.println(temp[i]);
+		}
+		
+	}
+}
