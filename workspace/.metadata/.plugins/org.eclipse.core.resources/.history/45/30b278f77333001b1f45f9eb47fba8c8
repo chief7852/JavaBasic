@@ -1,9 +1,0 @@
-package e_oop;
-
-public class ClassMaker {
-	
-	//전역변수 하나를 선언및 초기화해주세요.
-	public static void main(String[] args) {
-		int one = 0;
-	}
-}

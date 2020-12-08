@@ -1,0 +1,16 @@
+package Mandoo;
+
+public class ex
+{
+
+	public static void main(String[] args) 
+	{	for(int i = 0 ; i <2000; i++){
+		long end = System.currentTimeMillis();
+		long start = System.currentTimeMillis();
+		while((end-start)<100)
+			end=System.currentTimeMillis();
+		String a = "\n\n\n\n\n\n\n\t\t\t\t\t\t\t고향만두\n\n\n\n\n\n\n\n\n\n\\n";
+		System.out.println(a);
+		}
+	}
+}

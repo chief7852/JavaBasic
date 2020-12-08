@@ -1,0 +1,18 @@
+package programers;
+
+public class sum {
+
+	public static void main(String[] args) {
+		String s = "qwer";
+		int a = s.length()/2;
+		String answer = "";
+		if(s.length()%2 ==0){
+			answer =s.substring(a);
+		}else {
+			answer =s.substring(a);
+		}
+		System.out.println(answer);
+		System.out.println(a);
+	}
+
+}

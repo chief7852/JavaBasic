@@ -1,0 +1,17 @@
+package programers;
+
+public class sum {
+
+	public static void main(String[] args) {
+		String s = "abcde";
+		int a = s.length()/2;
+		String answer = "";
+		if(s.length()%2 ==0){
+			answer =s.substring(a);
+		}else{
+			answer =s.substring(a,a+1);
+		}
+		System.out.println(answer);
+	}
+
+}

@@ -1,0 +1,17 @@
+package Mandoo;
+
+public class ex
+{
+
+	public static void main(String[] args) 
+	{	for(int i = 0 ; i <2000; i++){
+		long end = System.currentTimeMillis();
+		long start = System.currentTimeMillis();
+		while((end-start)<1200){
+			end=System.currentTimeMillis();
+		String a = "dasgfagasgsasaf";
+		System.out.println(a);
+		}
+		}
+	}
+}
