@@ -7,7 +7,11 @@
 <fullyQualifiedTypeName name="e_oop.score.Student"/>
 <fullyQualifiedTypeName name="e_oop.Init"/>
 <fullyQualifiedTypeName name="home.ScanUtil"/>
-<fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="g_oop2.AccessModifier"/>
 <fullyQualifiedTypeName name="g_oop2.test.AccessTest"/>
+<fullyQualifiedTypeName name="g_oop2.SampleAbstractParent"/>
+<fullyQualifiedTypeName name="g_oop2.SampleInterface"/>
+<fullyQualifiedTypeName name="g_oop2.Dropship"/>
+<fullyQualifiedTypeName name="g_oop2.SCV"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>

@@ -32,6 +32,7 @@ public class Food {
 		break;
 		case "14" : nu = ongs;
 		break;
+		case "h" : System.out.println("넣으면 이상할것 같은것만 안넣으면됩니다");
 		}
 		return nu;
 	}	//속재료
@@ -56,7 +57,7 @@ public class Food {
 	}
 		// 반죽재료
 	void how(){
-		System.out.println("재료를 골라주십시오(원하는 재료 앞의 숫자를 입력해 주십시오)");
+		System.out.println("---------------------------\n재료를 골라주십시오(원하는 재료 앞의 숫자를 입력해 주십시오)(0.다시 고르기 h.힌트)");
 		System.out.println();
 		System.out.println();
 		System.out.print("무엇을 넣을까...?");
@@ -76,6 +77,7 @@ public class Food {
 	String wine = "와인  ";
 	//정답 :밀가루 물 
 	String dum2(String nu){
+		
 		switch(nu){
 		case "1" : nu = rice;
 		break;

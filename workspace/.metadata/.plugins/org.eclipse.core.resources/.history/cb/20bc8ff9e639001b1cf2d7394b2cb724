@@ -1,0 +1,39 @@
+package Mandoo;
+
+import java.util.Scanner;
+
+public class ex
+{
+
+	public static void main(String[] args) 
+	{
+		Food b = new Food();
+		Scanner s = new Scanner(System.in);
+		
+		String sum1 = "";
+		String nu;
+		String[] temp = null;
+		for(int i = 1; i <= 7; i++ ){
+			
+			System.out.print("들어간 재료 :"+sum1+"\n=================================");								//입력받은 재료를 food클래스에서 가져와서
+			System.out.println();                                           //sum 값에 저장해서 출력함으로써
+			b.dump();                                                       //자신이 넣었던게 뭐였는지 볼수있게 만들음
+			b.how();                                                        //
+			//
+			nu = s.nextLine();
+
+			b.dum(nu);
+			System.out.println();
+			System.out.println();
+			sum1 = sum1 + b.dum(nu);
+			temp[i] = b.dum(nu);
+
+		}
+		System.out.println("들어간 재료 :"+sum1+"\n=================================");
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		System.out.println("\n=================================");
+		System.out.println(temp[1]);
+	}
+}

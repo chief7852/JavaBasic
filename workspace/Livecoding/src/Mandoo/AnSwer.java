@@ -1,5 +1,7 @@
 package Mandoo;
 
+import java.util.Arrays;
+
 public class AnSwer {
 	//정답
 	String meet = "돼지고기 ";
@@ -22,8 +24,8 @@ public class AnSwer {
 	String water = "물  ";
 	String juice = "쥬스  ";
 	String wine = "와인  ";
-	String ans1 = meet+dubu+onion+cabbage+koil+garlic+leek;
-	String ans2 = wheat+water;
+	String[] ans1 ={meet,dubu,onion,cabbage,koil,garlic,leek};
+	String[] ans2 = {wheat,water};
 	String roast = "굽기";
 	String steam = "찌기";
 	String boil = "삶기";
@@ -33,28 +35,49 @@ public class AnSwer {
 	String moon1 = moon+roast;
 	String round1 = round+steam;
 	String bag1 = bag+boil;
+	
+	
 	Instruction a = new Instruction();
 		void ending(){
-			System.out.println("돼지고기 두부 양파 양배추 참기름 마늘 대파");
-			System.out.println("밀가루 물");
-			System.out.println("반달모양-굽기, 둥근모양-찌기 , 복주머니모양-삶기");
+			System.out.println("속재료 : 돼지고기 두부 양파 양배추 참기름 마늘 대파");
+			System.out.println("반죽 : 밀가루 물");
+			System.out.println("모양과 요리방법 :반달모양-굽기,\n 둥근모양-찌기 ,\n 복주머니모양-삶기");
 			System.out.println("\n=================================");
 		}
-		void answer(String sum1,String sum2,String sum3,String sum4){
+		
+		
+		void answer(String[] temp1,String[] temp2,String sum3,String sum4){
 			String a = sum3+sum4;
-			if(sum1.equals(ans1)&&sum2.equals(ans2)){
-				if(a.equals(moon1)||a.equals(round1)||a.equals(bag1)){
-					String i ="역시!!!\n고향만두를 따라올 만두는 없지.. ㅎㅎㅎ";
-					this.a.UI(i);
-				}else{
-				String j = "\n퉷퉷 반죽이 너무이상해!!!";
-				this.a.UI(j);
+			Arrays.sort(ans1);
+			Arrays.sort(ans2);
+			if(Arrays.equals(ans1,temp1)&&Arrays.equals(ans2,temp2))
+			{
+				if(a.equals(moon1)||a.equals(round1)||a.equals(bag1))
+				{
+					String i1 ="역시!!!\n고향만두를 따라올 만두는 없지.. ㅎㅎㅎ";
+					this.a.UI(i1);
 				}
-			}else{
-				String k = "\n퉷퉷 이게 무슨맛이야 처음부터 다 잘못됐어!!";
-				this.a.UI(k);
+				else
+				{
+				String i2 = "\n흠....요리방법이 이상해 ..";
+				this.a.UI(i2);
+				}
+				
 			}
-		}
-		
-		
+			else if(Arrays.equals(ans1,temp1)==false&&Arrays.equals(ans2,temp2)==true){
+				if(a.equals(moon1)||a.equals(round1)||a.equals(bag1))
+				{
+					String i3 = "\n흠....만두속만 바꾸면 괜찮을것 같은데..";
+					this.a.UI(i3);
+				}
+		}else if(Arrays.equals(ans1,temp1)==true&&Arrays.equals(ans2,temp2)==false){
+			if(a.equals(moon1)||a.equals(round1)||a.equals(bag1))
+			{
+				String i4 = "\n흠....만두피만 바꾼다면 아마..";
+				this.a.UI(i4);
+			}
+		 }else{
+			 String i2 = "\n흠....요리방법이 이상해 ..";
+		 }
+	}
 }

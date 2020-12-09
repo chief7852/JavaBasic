@@ -26,7 +26,8 @@ public class SampleParent /*extends Object*/{
 		var = "생성자도 물려주지 않는다.";
 	}
 	
-	int method(int a,int b){
-		return a+b;
+	int method3( ){
+		return 0;
+		
 	}
 }

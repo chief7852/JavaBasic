@@ -1,5 +1,6 @@
 package Mandoo;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 
@@ -57,21 +58,34 @@ public class game_start {
 
 		//재료 입력받기
 		String sum1 = "";
+		
+		sum1 = "";
 		String nu;
-		for(int i = 1; i <= 7; i++ ){
+		String[] temp1 = new String[7];
+		int i1 = 1;
+		while(i1 <= 7){
 
 			System.out.print("들어간 재료 :"+sum1+"\n=================================");								//입력받은 재료를 food클래스에서 가져와서
 			System.out.println();                                           //sum 값에 저장해서 출력함으로써
 			b.dump();                                                       //자신이 넣었던게 뭐였는지 볼수있게 만들음
 			b.how();                                                        //
-			//
+			
 			nu = s.nextLine();
-
-			b.dum(nu);
+			if(nu.equals("0")){
+				i1 = 1;
+				temp1 = new String[7];
+				sum1 = "";
+				continue;
+			}if(nu.equals("h")){
+				System.out.println("힌트: ★넣으면 이상할것 같은것만 안넣으면됩니다★");
+				continue;
+			}
+			temp1[i1-1]=b.dum(nu);
 			System.out.println();
 			System.out.println();
 			sum1 = sum1 + b.dum(nu);
-
+			i1++;
+		
 		}
 		System.out.println("들어간 재료 :"+sum1+"\n=================================");
 		System.out.println();
@@ -90,17 +104,30 @@ public class game_start {
 		a.nextLevel(manu);
 		String sum2 = "";
 		nu = "";
-		for(int i = 1; i <= 2; i++){
+		String[] temp2 = new String[2];
+		i1 = 1;
+		while(i1 <= 2){
 			System.out.print("들어간 재료 :"+sum2+"\n=================================");								//입력받은 재료를 food클래스에서 가져와서
 			System.out.println();
 			b.dump2();
 			b.how();
 			nu = s.nextLine();
+			if(nu.equals("0")){
+				i1 = 1;
+				temp2 = new String[2];
+				sum2 = "";
+				continue;
+			}if(nu.equals("h")){
+				System.out.println("힌트: ★넣으면 이상할것 같은것만 안넣으면됩니다★");
+				continue;
+			}
 			System.out.println();
 			b.dum2(nu);
 			System.out.println();
 			System.out.println();
 			sum2 = sum2 + b.dum2(nu);
+			temp2[i1-1] =b.dum2(nu);
+			i1++;
 		}
 		System.out.println("들어간 재료 :"+sum2+"\n=================================");
 		System.out.println();
@@ -158,8 +185,10 @@ public class game_start {
 		System.out.println();
 		//심사받기
 		
+		Arrays.sort(temp1);
+		Arrays.sort(temp2);
 		
-		audit.answer(sum1, sum2, sum3, sum4);
+		audit.answer(temp1, temp2, sum3, sum4);
 		System.out.println();
 		System.out.println();
 
@@ -169,15 +198,20 @@ public class game_start {
 		System.out.println();
 		System.out.println();
 		System.out.println();
-		System.out.print("다시하시겠어요?(y/n)\n>");
+		System.out.print("다시하시려면 아무키나 눌러주세요..(n.프로그램 종료)\n>");
 		input =s.nextLine();
-		if(input == "n"){
-			break;
-		}
+		if(input.equals("n")){
+			System.out.println("");
+			Ending n = new Ending();
+			n.ending();
+			break ;
+		}else
+			
 		System.out.println();
 		System.out.println();
 		System.out.println();
 		System.out.println();
+		continue;
 		}
 		
 	}

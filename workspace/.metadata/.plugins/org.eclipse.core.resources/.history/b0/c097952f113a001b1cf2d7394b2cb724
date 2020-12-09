@@ -1,0 +1,25 @@
+package subj_game;
+
+import home.ScanUtil;
+
+import java.util.Scanner;
+
+public class start {
+	public static void main(String[] args) {
+		
+		for(int i = 0 ; i <100; i++){
+			long end = System.currentTimeMillis();
+			long start = System.currentTimeMillis();
+			while((end-start)<10)
+				end=System.currentTimeMillis();
+			if(i%2 == 0){
+				System.out.println("ヽ(｀Д´)ﾉ");
+				System.out.println("\n\n\n\n\n\n\n");
+			}else if(i%3 == 0){
+				System.out.println("ヽ(｀Д´)ノ");
+				System.out.println("\n\n\n\n\n\n\n");
+			}
+			
+		}
+}//   ヽ(｀Д´)ﾉ    ヽ(｀Д´)ノ
+}

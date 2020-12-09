@@ -98,3 +98,4 @@ public class Instruction {
 		}   
 	}
 }
+		//   ヽ(｀Д´)ﾉ    ヽ(｀Д´)ノ
