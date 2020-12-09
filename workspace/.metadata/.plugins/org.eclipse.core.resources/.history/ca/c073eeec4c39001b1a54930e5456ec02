@@ -16,7 +16,5 @@ public class BBubgi {
 			
 		}
 		System.out.println(Arrays.toString(temp));
-		
-		//실패
 	}
 }
