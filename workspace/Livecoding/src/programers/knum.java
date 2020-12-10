@@ -1,18 +1,23 @@
 package programers;
 
+import java.util.Arrays;
+
 public class knum {
 
 	public static void main(String[] args) {
-		int[][] commands;
-		int[] array = {1,5,2,6,3,7,4};
-		int a=2;
-		int b=5;
-		int k=3;
-		array[2]~a
-		for(int i = a ; i <array.length;i++){
-			
-		}
-
+	 String[] temp = new String[9];
+	 int i = 0;
+	 for( i = 0; i < 6; i++){
+		 temp[i] = "하나";
+		 
+	 }
+	 System.out.println(Arrays.toString(temp));
+	 String[] temp2 = new String[i];
+	 for(int j =0 ; j <temp2.length ; j++)
+	 {
+		 temp2[j] = temp[j];
+	 }
+	 System.out.println(Arrays.toString(temp2));
 	}
 
 }

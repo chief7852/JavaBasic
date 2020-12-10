@@ -1,0 +1,10 @@
+package programers;
+
+public class divisor_ARRAY {
+
+	public int[] solution(int[] arr, int divisor) {
+        int[] answer = {};
+        System.out.println(arr.length);
+        return answer;
+    }
+}

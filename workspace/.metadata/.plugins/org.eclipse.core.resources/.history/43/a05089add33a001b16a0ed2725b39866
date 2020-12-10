@@ -1,0 +1,27 @@
+package programers;
+
+import java.util.Arrays;
+
+public class divisor_ARRAY {
+
+	public static void main(String[] args) {
+		int arr[] = {5,9,7,10};
+		int divisor = 5;
+		int[] answer = {2,3};
+		
+	       int temp = 0;
+	       answer = new int[arr.length];
+			for(int i =0; i<arr.length;i++){
+				if(arr[i]%divisor == 0)
+				{
+					answer[temp] = arr[i];
+					temp++;
+				}else{
+					answer[0] = -1;
+				}
+			}
+		System.out.println(Arrays.toString(answer));
+
+	}
+
+}

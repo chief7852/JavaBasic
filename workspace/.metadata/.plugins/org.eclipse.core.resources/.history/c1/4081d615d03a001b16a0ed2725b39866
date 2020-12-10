@@ -1,0 +1,10 @@
+package programers;
+
+public class divisor_ARRAY {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
