@@ -10,11 +10,11 @@ public class Ending {
 				end=System.currentTimeMillis();
 			if(i%2 == 0){
 				System.out.println("\n\n\n\n\n");
-				System.out.println("ヽ(｀Д´)ﾉ 다들 고생하셨습니다.");
+				System.out.println("ヽ(｀Д´)ﾉ 고생하셨습니다.");
 				System.out.println("\n\n\n\n\n");
 			}else if(i%2 != 0){
 				System.out.println("\n\n\n\n\n");
-				System.out.println("ヽ(｀Д´)ノ다들 고생하셨습니다.");
+				System.out.println("ヽ(｀Д´)ノ고생하셨습니다.");
 				System.out.println("\n\n\n\n\n");
 			}
 			
