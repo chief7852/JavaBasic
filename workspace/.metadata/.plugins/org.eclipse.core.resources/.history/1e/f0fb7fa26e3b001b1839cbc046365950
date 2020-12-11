@@ -30,9 +30,4 @@ public class SampleParent /*extends Object*/{
 		return 0;
 		
 	}
-
-	int method(int a, int b) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
 }
