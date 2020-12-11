@@ -1,0 +1,29 @@
+package programers;
+
+import java.util.Arrays;
+
+public class Return {
+	public static void main(String[] args) {
+		int i = 2;
+		int j = 5;
+		int k = 3;
+	    int[] array = {1, 5, 2, 6, 3, 7, 4};
+	    int[] answer = {};
+	    int[] temp = new int[array.length];
+	    int x =0;
+	    int y = 0;
+	    for(int m = i; m <=j; m++){
+	    	temp[x] =array[m];
+	    	x++;
+	    	if(temp[x]!=0){
+	    		
+	    	}
+	    }
+	   System.out.println(Arrays.toString(temp));
+	
+	}
+
+	
+
+    
+}

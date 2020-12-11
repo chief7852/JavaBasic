@@ -1,0 +1,29 @@
+package programers;
+
+class Solution {
+    public String solution(String[] participant, String[] completion) {
+        String answer = "";
+        for(int i = 0; i <completion.length;i++){
+        	int m = 0;
+        	
+	        	for(int j = 0; j <participant.length;j++){
+	        		m++;
+	        		if(participant[j]!=completion[i])
+	        		{
+	        			answer= participant[j];
+	        		}
+	        		
+	        	}
+	        }
+		if(answer.equals("")){
+			for(int i = 1; i <participant.length;i++){
+				for(int j = 0; j <participant.length-1; j++){
+					if(participant[i] == participant[j]){
+						answer = participant[i];
+					}
+				}
+			}
+		}
+        return answer;
+    }
+}

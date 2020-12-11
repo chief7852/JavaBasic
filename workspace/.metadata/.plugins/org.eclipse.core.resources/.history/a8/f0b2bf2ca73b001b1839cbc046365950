@@ -1,0 +1,37 @@
+package programers;
+
+import java.util.Arrays;
+
+public class Return {
+	public static void main(String[] args) {
+		int[][] commands;
+		
+		int i = 1;
+		int j = 7;
+		int k = 3;
+	    int[] array = {1, 5, 2, 6, 3, 7, 4};
+	    int[] answer = {};
+	    int[] temp = new int[array.length];
+	    int x =0;
+	    
+	    for(int m = i; m <=j; m++){
+	    	temp[x] =array[m-1];
+	    	x++;
+	    	
+	    }
+	    
+	   System.out.println(Arrays.toString(temp));
+	   answer = new int[x];
+	   for(int y= 0; y < answer.length;y++){
+		   answer[y] = temp[y];
+	   }
+	   Arrays.sort(answer);
+	   int r = answer[k-1];
+	   System.out.println(Arrays.toString(answer));
+	   System.out.println(r);
+	}
+
+	
+
+    
+}
