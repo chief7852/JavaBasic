@@ -33,8 +33,6 @@ public class Return {
 		   answer[y] = temp[y];
 	   }
 	   Arrays.sort(answer);
-	   
-	   
 	   int r = answer[k-1];
 	   System.out.println(Arrays.toString(answer));
 	   System.out.println(r);
