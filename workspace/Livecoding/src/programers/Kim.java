@@ -1,20 +1,21 @@
 package programers;
 
-public class Kim {
-
-	public static void main(String[] args) {
-		String[] seoul = {"Jane", "Kim"};
-		
-		int i = 0;
-		while(true){
-			if(seoul[i].equals("Kim")){
-				
-				System.out.println("김서방은 "+(i)+"에 있다");
-				break;
-			}
-			i++;
-		}
-
-	}
-
+class Solution {
+    public String solution(String[] seoul) {
+        String answer = "";
+        int i = 0;
+        String a = "";
+        String[] temp = {"김서방은 ","에 있다"};
+        while(true)
+        {
+        	if(seoul[i].equals("Kim")){
+        		a = seoul[i];
+        		break;
+        	}
+        	i++;
+        }
+        answer = temp[0] + i + temp[1];
+        
+        return answer;
+    }   
 }
