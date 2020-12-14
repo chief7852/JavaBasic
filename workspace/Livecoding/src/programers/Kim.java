@@ -1,6 +1,6 @@
 package programers;
 
-class Solution {
+class Kim {
     public String solution(String[] seoul) {
         String answer = "";
         int i = 0;
