@@ -133,11 +133,8 @@ public class Board {
 				System.out.print("\t"+date.get(i));
 			
 			System.out.println();
-			System.out.println("=================================");
+			System.out.println("-------------------------------");
 			System.out.println("1.처음으로\t2.정보보기");
-			System.out.println("=================================");
-			System.out.println();
-			System.out.println();
 			
 			}
 		}
@@ -163,12 +160,10 @@ public class Board {
 				System.out.print("\t"+date.get(i));
 			
 			System.out.println();
-			System.out.println("--------------------------------");
+			
 			
 		}
-		System.out.println("               .                ");
-		System.out.println("               .                ");
-		System.out.println("               .                ");
+		
 		
 		
 		System.out.println("=================================");

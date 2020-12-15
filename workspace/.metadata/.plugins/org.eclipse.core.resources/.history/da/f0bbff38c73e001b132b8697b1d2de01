@@ -118,9 +118,9 @@ public class Board {
 	//제목별로 찾기
 	void titler(String tre)
 	{
-		System.out.println("=================================");
+		System.out.println("-------------------------------");
 		System.out.println("번호\t제목\t작성자\t작성일");
-		System.out.println("=================================");
+		System.out.println("-------------------------------");
 		
 		for(int i = Table.size()-1; i >=0;i--)
 		{
@@ -133,11 +133,8 @@ public class Board {
 				System.out.print("\t"+date.get(i));
 			
 			System.out.println();
-			System.out.println("=================================");
+			System.out.println("-------------------------------");
 			System.out.println("1.처음으로\t2.정보보기");
-			System.out.println("=================================");
-			System.out.println();
-			System.out.println();
 			
 			}
 		}
@@ -149,9 +146,9 @@ public class Board {
 	void print()
 	{
 		Board b = new Board();
-		System.out.println("=================================");
+		System.out.println("-------------------------------");
 		System.out.println("번호\t제목\t작성자\t작성일");
-		System.out.println("=================================");
+		System.out.println("-------------------------------");
 		
 		for(int i = Table.size()-1; i >=0;i--)
 		{
@@ -163,12 +160,10 @@ public class Board {
 				System.out.print("\t"+date.get(i));
 			
 			System.out.println();
-			System.out.println("--------------------------------");
+			
 			
 		}
-		System.out.println("               .                ");
-		System.out.println("               .                ");
-		System.out.println("               .                ");
+		
 		
 		
 		System.out.println("=================================");

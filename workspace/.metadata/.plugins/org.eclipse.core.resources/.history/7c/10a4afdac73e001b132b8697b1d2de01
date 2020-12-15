@@ -135,9 +135,6 @@ public class Board {
 			System.out.println();
 			System.out.println("=================================");
 			System.out.println("1.처음으로\t2.정보보기");
-			System.out.println("=================================");
-			System.out.println();
-			System.out.println();
 			
 			}
 		}

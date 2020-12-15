@@ -14,7 +14,7 @@ public class Board {
 	static ArrayList<String> writer = new ArrayList<>();
 	static ArrayList<String> date = new ArrayList<>();
 	int num = Table.size();
-	int rank = 0;
+	int rank = 1;
 	public static void main(String[] args) {
 		/*
 		 * ArrayList와 HashMap을 사용해 게시판 테이블을 만들고,
@@ -67,8 +67,6 @@ public class Board {
 			case "1" : b.rech();
 						String i = s.nextLine();
 						b.reserch(i);
-						String impor  = s.nextLine();
-						b.impor(impor);
 						continue;
 			case "2" :
 					  System.out.print("제목 : ");
@@ -118,30 +116,18 @@ public class Board {
 	//제목별로 찾기
 	void titler(String tre)
 	{
-		System.out.println("=================================");
-		System.out.println("번호\t제목\t작성자\t작성일");
-		System.out.println("=================================");
-		
 		for(int i = Table.size()-1; i >=0;i--)
 		{
 			
-			if(title.get(i).contains(tre)){
-				
-			System.out.print(i+1);
+	
+			
 				System.out.print("\t"+title.get(i));
 				System.out.print("\t"+writer.get(i));
 				System.out.print("\t"+date.get(i));
 			
 			System.out.println();
-			System.out.println("=================================");
-			System.out.println("1.처음으로\t2.정보보기");
-			System.out.println("=================================");
-			System.out.println();
-			System.out.println();
 			
-			}
 		}
-		
 	}
 	
 	
@@ -149,43 +135,28 @@ public class Board {
 	void print()
 	{
 		Board b = new Board();
-		System.out.println("=================================");
+		System.out.println("-------------------------------");
 		System.out.println("번호\t제목\t작성자\t작성일");
-		System.out.println("=================================");
-		
+		System.out.println("-------------------------------");
+		int j = Table.size();
 		for(int i = Table.size()-1; i >=0;i--)
 		{
 			
-			
-			System.out.print(i+1);
+	
+			System.out.print(num-(j-2));
 				System.out.print("\t"+title.get(i));
 				System.out.print("\t"+writer.get(i));
 				System.out.print("\t"+date.get(i));
 			
 			System.out.println();
-			System.out.println("--------------------------------");
-			
+			j++;
 		}
-		System.out.println("               .                ");
-		System.out.println("               .                ");
-		System.out.println("               .                ");
 		
 		
-		System.out.println("=================================");
+		
+		System.out.println("-------------------------------");
 		System.out.println("1.조회	   2.등록	 3.종료");
 	}
-	
-	// 에고 정보
-	void impor(String a)
-	{
-		switch(a)
-		{
-		case "2" : System.out.println("줄거리 :아이고 힘들다..");
-		break;
-		}
-		
-	}
-	
 	
 }
 
