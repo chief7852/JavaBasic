@@ -1,0 +1,137 @@
+package i_collection;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class Board {
+	Scanner s = new Scanner(System.in);
+	Board b = new Board();
+	ArrayList<HashMap<String, String>> Table = new ArrayList<>();
+	HashMap<String, String> table = new HashMap<>();
+	
+	ArrayList<String> title = new ArrayList<>();
+	ArrayList<String> writer = new ArrayList<>();
+	ArrayList<String> date = new ArrayList<>();
+	public static void main(String[] args) {
+		/*
+		 * ArrayList와 HashMap을 사용해 게시판 테이블을 만들고,
+		 * 조회, 등록, 수정, 삭제가 가능한 게시판을 만들어주세요.
+		 * 번호(PK), 제목, 내용, 작성자, 작성일
+		 */
+		
+		/*
+		 *  -------------------------------
+		 *  번호  제목 		작성자	작성일
+		 *  -------------------------------
+		 *  4    안녕하세요  홍길동      12/15
+		 *  3    안녕하세요  홍길동      12/15
+		 *  2    안녕하세요  홍길동      12/15
+		 *  1    안녕하세요  홍길동      12/15
+		 *  -------------------------------
+		 *  1.조회		2.등록		3.종료
+		 */
+		
+		//게시판만들기
+		
+		
+		Scanner s = new Scanner(System.in);
+		Board b = new Board();
+		
+		
+		
+		
+		int num = 1;
+		int tru = 0;
+		
+		while(true)
+		{
+			
+			
+			System.out.println("-------------------------------");
+			System.out.println("번호\t제목\t작성자\t작성일");
+			System.out.println("-------------------------------");
+			
+			for(int i = 0; i <b.Table.size();i++)
+			{
+				
+				System.out.print(i+1);
+				
+					System.out.print("\t"+b.title.get(i));
+					System.out.print("\t"+b.writer.get(i));
+					System.out.print("\t"+b.date.get(i));
+				
+				System.out.println();
+//				HashMap<String, String> hashmap = Table.get(i);
+//				Set<String> keys = hashmap.keySet();
+//				System.out.print(i+1);
+//				for(String key : keys)
+//				{
+//					System.out.print("\t"+hashmap.get(key));
+//				}
+//				System.out.println();
+			}
+			
+			
+			
+			System.out.println("-------------------------------");
+			System.out.println("1.조회	   2.등록	 3.종료");
+			String ch = s.nextLine();
+			
+			switch(ch)
+			{
+			case "1" : b.rech();
+						String i = s.nextLine();
+						b.reserch(i);
+						continue;
+			case "2" :
+					  System.out.print("제목 : ");
+					  b.title.add(s.nextLine());
+					  b.table.put("제목", b.title.get(tru));
+					  System.out.print("작성자 : ");
+					  b.writer.add(s.nextLine());
+					  b.table.put("작성자", b.writer.get(tru));
+					  System.out.print("작성일(Month/day) : ");
+					  b.date.add(s.nextLine());
+					  b.table.put("작성일",b.date.get(tru));
+					  b.Table.add(b.table);
+					  tru++;
+					  continue;
+			case "3" : break;
+			default : continue;
+			}
+			break;
+		}
+		
+	}
+	
+	//조회 선택지
+	void reserch(String i)
+	{
+		
+		switch(i)
+		{
+		case "1":System.out.print("제목을 입력해주세요 : ");
+				String tre = s.nextLine();
+				b.titler(tre);
+		}
+	}
+	
+	void rech()
+	{
+		System.out.println("====================================\t");
+		System.out.println("1.제목으로 찾기 2.날짜별로 찾기 3.작가별로 찾기\t");
+		System.out.println("====================================\t");
+		System.out.println(">");
+	}
+	
+	//제목별로 찾기
+	void titler(String tre)
+	{
+//		Arr
+	}
+	
+}
+
+
+	
