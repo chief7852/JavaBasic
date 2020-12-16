@@ -1,0 +1,45 @@
+package programers;
+
+import java.util.HashMap;
+import java.util.Set;
+
+public class sportw {
+	public static void main(String[] args)
+	{
+		int n =5;
+		int[] reseve = {1,3,5};
+		int[] lost = {2,4};
+		
+		int[] students = new int[n];
+		for(int i = 0; i <students.length; i++)
+		{
+			students[i] = 1;
+		}
+		
+		
+		
+		for(int i = 0; i <students.length;i++)
+		{
+			for(int j = 0; j <reseve.length; j++)
+			{
+				if(students[reseve[j]]== students[i])
+				{
+					students[reseve[j]] += 1;
+					
+				}
+			}
+			
+			for(int j = 0;j <lost.length;j++)
+			{
+				if(lost[j] == students[i])
+				{
+					students[i] -= 1;
+				}
+			}
+			System.out.println(students[i]);
+		}
+		
+		
+		
+	}
+}
