@@ -287,7 +287,7 @@ public class Board {
 				inside.set(i, re);
 				break;
 			case "3":
-				return;
+				break;
 
 			default : break;
 
