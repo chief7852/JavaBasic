@@ -175,7 +175,7 @@ public class Score {
 		 
 	}
 
-	
+	//게시판 숫자 쿼리 select nvl(max(board_no),0) +1 as board_no from TB_JDBC)
 	
 
 }

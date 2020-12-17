@@ -1,0 +1,91 @@
+package j_jdbc;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.Scanner;
+
+public class JDBCboard
+{
+	String url = "jdbc:oracle:thin:@localhost:1521:xe"; //주소
+	String user = "JYS02";	//아이디
+	String password = "JAVA";	//비번
+		
+	
+	
+	Connection con = null;
+	PreparedStatement ps = null;
+	ResultSet rs = null;
+	public static void main(String[] args) 
+	{
+		JDBCboard a =new JDBCboard();
+		Scanner s = new Scanner(System.in);
+		/*
+		 * 오라클 데이터베이스에 게시판 테이블을 생성하고, 게시판 프로그램을 만들어주세요.
+		 * 테이블 : TB_JDBC_BOARD
+		 * 컬럼 : BOARD_NO, TITLE, CONTENT, USER_ID, REG_DATE
+		 */
+		while(true)
+		{
+			a.UI();
+			String UIp = s.nextLine();
+			
+			
+		}
+			
+			
+	}
+	
+	
+	
+	void login()
+	{
+		
+	}
+	
+	
+	void UI()
+	{
+		System.out.println("=================================");
+		System.out.println("번호\t제목\t작성자\t작성일");
+		System.out.println("=================================");
+		System.out.println("               .                ");
+		System.out.println("               .                ");
+		System.out.println("               .                ");
+		System.out.println("=================================");
+		System.out.println("1.조회	 2.등록	 3.종료    4.찾기");
+	}
+	//조회
+	void Look()
+	{
+		
+	}
+	
+	
+	//등록
+	void insert(int no,String title,String content,String id)
+	{
+	  	try {
+	  		con = DriverManager.getConnection(url, user, password);	
+	  		String sql = "insert into TB_JDBC_BOARD values(?,?,?,?)";
+	  		ps =con.prepareStatement(sql);	
+	  		
+	  		ps.setInt(1, no);
+	  		ps.setString(2,title);
+	  		ps.setString(3,content);
+	  		ps.setString(4,id);
+	  		
+	  } catch (SQLException e)
+	  {
+	  	e.printStackTrace();
+	  }
+	  finally 
+	  {
+	  	if(rs != null) try { rs.close(); } catch(Exception e) {}
+	  	if(ps != null) try { ps.close(); } catch(Exception e) {}
+	  	if(con != null) try { con.close(); } catch(Exception e) {}
+	  }
+	}
+}
