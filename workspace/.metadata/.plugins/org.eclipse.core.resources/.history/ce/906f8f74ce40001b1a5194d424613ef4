@@ -1,0 +1,63 @@
+package j_jdbc;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+public class JDBCUtil
+{
+	
+	//JDBCUtill instance = JDBCUtil.getInstance();-- 사용법?
+	//싱글톤 패턴 : 인스턴스의 생성을 제한하여 하나의 인스턴스만 사용하는 디자인 패턴			--디자인패턴:클래스를 설계하는 방식
+	private JDBCUtil()
+	{
+		
+	}
+	
+	//인스턴스를 보관할 변수
+	private static JDBCUtil instance;
+	
+	//인스턴스를 빌려주는 메서드
+	public static JDBCUtil getInstance()
+	{
+		if(instance == null)
+		{
+			instance = new JDBCUtil();
+		}
+		return instance;
+	}
+	
+	
+	String url = "jdbc:oracle:thin:@localhost:1521:xe"; 
+	String user = "JYS02";	
+	String password = "JAVA";
+	
+	
+	Connection con = null;
+	PreparedStatement ps = null;
+	ResultSet rs = null;
+	
+	/*
+	 * Map<String, Object> selectOne(String sql)					       --물음표가 없는 메소드(한줄)
+	 * Map<String, Object> selectOne(String sql, List<Object> param)       --물음표가 있는메서드 (? , 파라미터)
+	 * List<Map<String, Object>> selectList(String sql)				       --여러줄
+	 * List<Map<String, Object>> selectList(String sql, List<Object> param)
+	 * int update(String sql)											   --몇개행이 영향받았는지
+	 * int update(String sql, List<Object> param)
+	 */
+	
+	
+										//↓얘가 쿼리
+	List<Map<String, Object>> selectList(String sql, List<Object> param)
+	{
+		//쿼리를 조회한 결과
+		List<Map<String, Object>> list = new ArrayList<>();
+		
+		
+		return list;
+	}
+	
+}
