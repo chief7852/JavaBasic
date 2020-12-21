@@ -52,6 +52,7 @@ public class CopyOfsportw {
 				{
 					students[j]++;
 					students[i]--;
+					
 				}
 			}
 		}

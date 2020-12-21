@@ -96,7 +96,7 @@ public class JDBCUtil
 	}
 	
 	//2번예시
-	Map<String, Object> selectOne(String sql, List<Object> param)
+	public Map<String, Object> selectOne(String sql, List<Object> param)
 	{
 		HashMap<String, Object> hashmap = new HashMap <>();
 		try {
@@ -114,14 +114,15 @@ public class JDBCUtil
 			
 			int columnCount = md.getColumnCount();
 		
-			rs.next();
-			
+			while(rs.next())
+			{
 			for(int i = 1; i< columnCount; i++)
 			{
 			String key = md.getColumnName(i);
 			Object value = rs.getObject(key);
 			hashmap.put(key,value);
 			
+			}
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -132,7 +133,7 @@ public class JDBCUtil
 	
 	//3번
 	
-	List<Map<String, Object>> selectList(String sql)
+	public List<Map<String, Object>> selectList(String sql)
 	{
 		//쿼리를 조회한 결과
 		List<Map<String, Object>> list = new ArrayList<>();
@@ -249,7 +250,7 @@ public class JDBCUtil
 	}
 	
 	
-	int update(String sql, List<Object> param){
+	public int update(String sql, List<Object> param){
 	try {
 		con = DriverManager.getConnection(url,user,password);
 		ps = con.prepareStatement(sql);
