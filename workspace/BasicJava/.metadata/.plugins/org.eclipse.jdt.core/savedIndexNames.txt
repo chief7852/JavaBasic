@@ -1,0 +1,1 @@
+INDEX VERSION 1.126+D:\A_TeachingMaterial\1.BasicJava\workspace\BasicJava\.metadata\.plugins\org.eclipse.jdt.core
