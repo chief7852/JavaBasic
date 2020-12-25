@@ -18,21 +18,21 @@ public class JDBCboard
 	DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
 	
 	
-	String url = "jdbc:oracle:thin:@localhost:1521:xe"; //주소
-	String user = "JYS02";	//아이디
-	String password = "JAVA";	//비번
+	static String url = "jdbc:oracle:thin:@localhost:1521:xe"; //주소
+	static String user = "JYS02";	//아이디
+	static String password = "JAVA";	//비번
 	
-	static int num = 4;
 	
-	Connection con = null;
-	PreparedStatement ps = null;
-	ResultSet rs = null;
+	
+	static Connection con = null;
+	static PreparedStatement ps = null;
+	static ResultSet rs = null;
 	
 	JDBCUtil jdbc = JDBCUtil.getInstance();
 
 	public static void main(String[] args) 
 	{
-		
+		System.out.println();
 		JDBCboard a =new JDBCboard();
 		Scanner s = new Scanner(System.in);
 		
@@ -58,21 +58,20 @@ public class JDBCboard
 			            String deta= s.nextLine();
 			            System.out.println("정말 삭제하시겠습니까? 1.예  2.아니오");
 			            a.delet(pick);
-			            num--;
+			            
 			            a.ui_2();
 			            deta = s.nextLine();
+			            if(deta = 0){System.exit(0)}
 			            break;
 			case "2" : System.out.println("제목");
 					   String title = s.nextLine();
 					   
 					   System.out.println("내용");
 					   String content = s.nextLine();
-					   num++;
-						a.insert( num,title, content, id);
-						
+						a.insert( title, content, id);
 						break;
 			case "3" : System.out.println("종료되었습니다.");
-						System.exit(0);
+						if(deta = 0){System.exit(0)}
 			case "4" :
 			}
 		}
@@ -157,21 +156,22 @@ public class JDBCboard
 	
 	
 	//등록
-	void insert(int num,String title,String content,String id)
+	void insert(String title,String content,String id)
 	{
 		long curr = System.currentTimeMillis();
 		SimpleDateFormat sdf2 = new SimpleDateFormat("yyyy/MM/dd");
 		String datetime2 = sdf2.format(new Date(curr));
 		
-		String sql = "insert into TB_JDBC_BOARD values(?,?,?,?,?)";
+		String sql = "insert into TB_JDBC_BOARD values BOARD_NO = COUNT(BOARD_NO)+1 ,TITLE = ? , CONTENT = ?"
+				+ " USER_ID = ?, REG_DATE = ?";
 		
 		
 		List<Object> param = new ArrayList<>();
-		param.add(1,num);
-		param.add(2,title);
-		param.add(3,content);
-		param.add(4,id);
-		param.add(5,datetime2);
+		
+		param.add(1,title);
+		param.add(2,content);
+		param.add(3,id);
+		param.add(4,datetime2);
 		
 		int list2 = jdbc.update(sql,param);
 //	  	try {
@@ -189,6 +189,7 @@ public class JDBCboard
 //	  {
 //	  	e.printStackTrace();
 //	  }
+		
 //	  finally 
 //	  {
 //	  	if(rs != null) try { rs.close(); } catch(Exception e) {}
@@ -226,13 +227,12 @@ public class JDBCboard
 	}
 	
 	//번호
-	private int createNewBoardNo() {
+	static int createNewBoardNo() {
 		int boardNo = 0;
 		try {
 			con = DriverManager.getConnection(url, user, password);
 			
-			String sql = "SELECT NVL(MAX(BOARD_NO), 0) + 1 AS BOARD_NO"
-					   + " FROM TB_JDBC_BOARD";
+			String sql = "SELECT NVL(MAX(BOARD_NO), 0) + 1 AS BOARD_NO FROM TB_JDBC_BOARD;";
 			ps = con.prepareStatement(sql);
 			
 			rs = ps.executeQuery();
