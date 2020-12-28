@@ -39,7 +39,6 @@
 <fullyQualifiedTypeName name="java.lang.Object"/>
 <fullyQualifiedTypeName name="java.util.concurrent.ArrayBlockingQueue"/>
 <fullyQualifiedTypeName name="dao.UserDao"/>
-<fullyQualifiedTypeName name="service.UserService"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="util.JDBCUtil"/>
@@ -47,7 +46,6 @@
 <fullyQualifiedTypeName name="dao.BoardDao"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
-<fullyQualifiedTypeName name="util.ScanUtil"/>
 <fullyQualifiedTypeName name="util.View"/>
 <fullyQualifiedTypeName name="controller.Controller"/>
 <fullyQualifiedTypeName name="service.BoardService"/>
@@ -60,4 +58,6 @@
 <fullyQualifiedTypeName name="j_jdbc.Controller"/>
 <fullyQualifiedTypeName name="e_oop.ScanUtil"/>
 <fullyQualifiedTypeName name="j_jdbc.UserDao"/>
+<fullyQualifiedTypeName name="service.UserService"/>
+<fullyQualifiedTypeName name="util.ScanUtil"/>
 </qualifiedTypeNameHistroy>
