@@ -55,9 +55,9 @@
 <fullyQualifiedTypeName name="j_jdbc.UserDao"/>
 <fullyQualifiedTypeName name="service.UserService"/>
 <fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="util.ScanUtil"/>
-<fullyQualifiedTypeName name="util.PrintUtil"/>
 <fullyQualifiedTypeName name="service.BoardService"/>
 <fullyQualifiedTypeName name="dao.AdminDao"/>
 <fullyQualifiedTypeName name="util.LodingUtil"/>
+<fullyQualifiedTypeName name="util.PrintUtil"/>
+<fullyQualifiedTypeName name="util.ScanUtil"/>
 </qualifiedTypeNameHistroy>
