@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="g_oop2.AccessModifier"/>
 <fullyQualifiedTypeName name="g_oop2.test.AccessTest"/>
 <fullyQualifiedTypeName name="g_oop2.SampleAbstractParent"/>
 <fullyQualifiedTypeName name="g_oop2.SampleInterface"/>
@@ -42,7 +41,6 @@
 <fullyQualifiedTypeName name="service.UserService"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="util.JDBCUtil"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="dao.BoardDao"/>
 <fullyQualifiedTypeName name="java.util.List"/>
@@ -50,7 +48,6 @@
 <fullyQualifiedTypeName name="util.ScanUtil"/>
 <fullyQualifiedTypeName name="util.View"/>
 <fullyQualifiedTypeName name="controller.Controller"/>
-<fullyQualifiedTypeName name="service.BoardService"/>
 <fullyQualifiedTypeName name="oracle.net.aso.a"/>
 <fullyQualifiedTypeName name="j_jdbc.UserService"/>
 <fullyQualifiedTypeName name="j_jdbc.BoardService"/>
@@ -60,4 +57,7 @@
 <fullyQualifiedTypeName name="j_jdbc.Controller"/>
 <fullyQualifiedTypeName name="e_oop.ScanUtil"/>
 <fullyQualifiedTypeName name="j_jdbc.UserDao"/>
+<fullyQualifiedTypeName name="util.JDBCUtil"/>
+<fullyQualifiedTypeName name="sun.applet.Main"/>
+<fullyQualifiedTypeName name="service.BoardService"/>
 </qualifiedTypeNameHistroy>

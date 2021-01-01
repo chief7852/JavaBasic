@@ -1,0 +1,15 @@
+package service;
+
+import util.PrintUtil;
+
+public class Board {
+	public static void main(String[] args) {
+		PrintUtil.title();
+		
+	}
+	void BoardCall ()
+	{
+		PrintUtil.title();
+	}
+}
+

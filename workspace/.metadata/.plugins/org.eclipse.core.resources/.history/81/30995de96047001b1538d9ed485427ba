@@ -1,0 +1,77 @@
+package service;
+
+import java.util.List;
+import java.util.Map;
+
+import controller.Controller;
+import dao.BoardDao;
+import util.JDBCUtil;
+import util.PrintUtil;
+import util.ScanUtil;
+import util.View;
+
+public class BoardService {
+	
+	private static BoardService instance;
+	private BoardService(){}
+	public static BoardService getInstance() 
+	{
+		if(instance == null)
+		{
+			instance = new BoardService();
+		}
+		return instance;
+	}
+	
+	private BoardDao boardDao = BoardDao.getInstance();
+	private int currentBoardNo = 0;
+	public int boardList() {
+		
+		List<Map<String,Object>> boardList = boardDao.selectBoardList();
+		
+		PrintUtil.title();
+		System.out.println("     📄고객센터✏️");
+		System.out.println(" 번호         말머리	   제목	      닉네임          작성일시");
+		for(int i = 0; i < boardList.size(); i++)
+		{
+			Map<String, Object> board = boardList.get(i);
+			System.out.println(board.get("BOARD_NO") + "         "
+					+ board.get("CATEGORY") + "	  "
+					+ board.get("TITLE") + "	      " 
+					+ board.get("NICKNAME") + "          "
+					+ board.get("B_DATE"));
+		}
+		System.out.println("========================================");	
+		System.out.println("1.조회\t2.등록\t0.로그아웃");
+		System.out.print("입력>");
+		
+		
+		int input = ScanUtil.nextInt();
+		
+		
+//		switch (input) {
+//		case 1:
+//			System.out.print("게시글 번호 입력>");
+//			currentBoardNo =ScanUtil.nextInt();
+//			return View.USER_MAIN;
+//		case 2:
+//			return View.BOAED_INSERT_FORM;
+//		case 0:								//로그아웃
+//			Controller.LoginUser = null;
+//			return View.HOME;
+//		}
+		return View.USER_BOARD;
+//	}
+//	public static void main(String[] args) {
+//		PrintUtil.title();
+//		System.out.println("     📄고객센터✏️");
+//		System.out.println(" 번호         말머리	   제목	      닉네임          작성일시");
+//		String sql = "SELECT BOARD_NO,NICKNAME,CATEGORY,TITLE,B_DATE "
+//				+ "FROM BOARD A, USERS B WHERE b.user_id = A.USER_IDORDER BY 1;";
+//	}
+//	void BoardCall ()
+//	{
+//		PrintUtil.title();
+	}
+}
+

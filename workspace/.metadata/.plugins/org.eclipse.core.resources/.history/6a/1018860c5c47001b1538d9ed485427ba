@@ -1,0 +1,15 @@
+package service;
+
+import util.PrintUtil;
+
+public class Board {
+	public static void main(String[] args) {
+		PrintUtil.title();
+		System.out.println("     📄고객센터✏️");
+	}
+	void BoardCall ()
+	{
+		PrintUtil.title();
+	}
+}
+
