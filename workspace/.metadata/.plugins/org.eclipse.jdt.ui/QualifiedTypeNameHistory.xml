@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
+<<<<<<< HEAD
 <fullyQualifiedTypeName name="g_oop2.test.AccessTest"/>
 <fullyQualifiedTypeName name="g_oop2.SampleAbstractParent"/>
+=======
+>>>>>>> 6b1db3f7072428ead63e9f54ace6e69d48c65e31
 <fullyQualifiedTypeName name="g_oop2.SampleInterface"/>
 <fullyQualifiedTypeName name="g_oop2.Dropship"/>
 <fullyQualifiedTypeName name="g_oop2.SCV"/>
@@ -38,14 +41,11 @@
 <fullyQualifiedTypeName name="java.lang.Object"/>
 <fullyQualifiedTypeName name="java.util.concurrent.ArrayBlockingQueue"/>
 <fullyQualifiedTypeName name="dao.UserDao"/>
-<fullyQualifiedTypeName name="service.UserService"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="dao.BoardDao"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
-<fullyQualifiedTypeName name="util.ScanUtil"/>
 <fullyQualifiedTypeName name="util.View"/>
 <fullyQualifiedTypeName name="controller.Controller"/>
 <fullyQualifiedTypeName name="oracle.net.aso.a"/>
@@ -57,7 +57,17 @@
 <fullyQualifiedTypeName name="j_jdbc.Controller"/>
 <fullyQualifiedTypeName name="e_oop.ScanUtil"/>
 <fullyQualifiedTypeName name="j_jdbc.UserDao"/>
+<<<<<<< HEAD
 <fullyQualifiedTypeName name="util.JDBCUtil"/>
 <fullyQualifiedTypeName name="sun.applet.Main"/>
 <fullyQualifiedTypeName name="service.BoardService"/>
+=======
+<fullyQualifiedTypeName name="service.UserService"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="service.BoardService"/>
+<fullyQualifiedTypeName name="dao.AdminDao"/>
+<fullyQualifiedTypeName name="util.LodingUtil"/>
+<fullyQualifiedTypeName name="util.PrintUtil"/>
+<fullyQualifiedTypeName name="util.ScanUtil"/>
+>>>>>>> 6b1db3f7072428ead63e9f54ace6e69d48c65e31
 </qualifiedTypeNameHistroy>
