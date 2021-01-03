@@ -1,0 +1,16 @@
+package service;
+
+import util.PrintUtil;
+
+public class Board {
+	public static void main(String[] args) {
+		PrintUtil.title();
+		System.out.println("     📄고객센터✏️");
+		System.out.println(" 번호         말머리	   제목	      닉네임          작성일시");
+	}
+	void BoardCall ()
+	{
+		PrintUtil.title();
+	}
+}
+

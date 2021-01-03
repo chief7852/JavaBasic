@@ -5,8 +5,8 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
-			<item value="D:\A_TeachingMaterial\1.BasicJava\workspace"/>
 			<item value="D:\Project1"/>
+			<item value="D:\A_TeachingMaterial\1.BasicJava\workspace"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value=""/>
