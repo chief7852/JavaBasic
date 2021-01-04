@@ -1,0 +1,31 @@
+package service;
+
+import util.JDBCUtil;
+import util.PrintUtil;
+
+public class BoardService {
+	
+	private static BoardService instance;
+	private BoardService(){}
+	public static BoardService getInstance() 
+	{
+		if(instance == null)
+		{
+			instance = new BoardService();
+		}
+		return instance;
+	}
+	
+	public static void main(String[] args) {
+		PrintUtil.title();
+		System.out.println("     📄고객센터✏️");
+		System.out.println(" 번호         말머리	   제목	      닉네임          작성일시");
+		String sql = "SELECT BOARD_NO,NICKNAME,CATEGORY,TITLE,B_DATE "
+				+ "FROM BOARD A, USERS B WHERE b.user_id = A.USER_IDORDER BY 1;";
+	}
+	void BoardCall ()
+	{
+		PrintUtil.title();
+	}
+}
+
