@@ -1,4 +1,5 @@
 INDEX VERSION 1.126+D:\A_TeachingMaterial\1.BasicJava\workspace\.metadata\.plugins\org.eclipse.jdt.core
+<<<<<<< HEAD
 712673515.index
 2128490789.index
 687645093.index
@@ -19,3 +20,24 @@ INDEX VERSION 1.126+D:\A_TeachingMaterial\1.BasicJava\workspace\.metadata\.plugi
 156359348.index
 3449960751.index
 1915826169.index
+=======
+1915826169.index
+3564211592.index
+2419878602.index
+4213021327.index
+3922062443.index
+4212858024.index
+1980521198.index
+2114095709.index
+2031535753.index
+480946134.index
+2761815052.index
+2543314172.index
+712673515.index
+3017901932.index
+2673029922.index
+507707909.index
+3108321839.index
+590868486.index
+1214354053.index
+>>>>>>> 952d27bd1c47eef1dc2c7515fe4b8cc1a1801fbb

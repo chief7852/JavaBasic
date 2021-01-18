@@ -18,7 +18,7 @@ public class JDBCboard
 	DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
 	
 	
-	static String url   = "jdbc:oracle:thin:@localhost:1521:xe"; //주소
+	static String url  = "jdbc:oracle:thin:@localhost:1521:xe"; //주소
 	static String user = "JYS02";	//아이디
 	static String password = "JAVA";	//비번
 	
